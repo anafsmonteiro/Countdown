@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Countdown</title>
+</head>
+
+<body>
+  <header class="cabecalho"></header>
+  <main>
+    <section class="principal">
+      <h1>Contagem regressiva</h1>
+      <div class="form">
+        <form id="form_main">
+          <label for="numero">Data:</label>
+          <input id='data_final' type="date" class="date"/>
+          <button id="contar">Contar</button>
+        </form>
+      </div>
+     
+    </section>
+    <section>
+      <h1>Contagem regressiva até a data selecionada:</h1>
+      <div class="relogio">
+        <ul>
+          <li class="relogio-resultado"><span id="dias" class="contador"></span> Dias</li>
+          <li class="relogio-resultado"><span id="horas" class="contador"></span> Horas</li>
+          <li class="relogio-resultado"><span id="minutos" class="contador"></span> Minutos</li>
+          <li class="relogio-resultado"><span id="segundos" class="contador"></span> Segundos</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape"></footer>
+</body>
+<script src="./script.js"></script>
+</html>
